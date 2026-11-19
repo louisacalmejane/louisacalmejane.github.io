@@ -1,5 +1,40 @@
 body{
-    background-color: darkgreen;
-    color: ivory(31, 31, 31);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(122, 161, 122);
+    color: ivory;
+    font-family: courier, monospace;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+p{
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    font-family: arial, Helvetica, sans-serif;
+}
+
+span{
+    color: rgb(167, 213, 185);
+}
+
+p span{
+    color: rgb(64, 148, 45);
+}
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, (300px, 1fr));
+    gap: 24px;
 }
