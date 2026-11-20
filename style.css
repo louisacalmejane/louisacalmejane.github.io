@@ -43,30 +43,28 @@ main a {
   position: relative; cursor: pointer; text-decoration: none; color: inherit;
 }
 img {
-  max-height: 72%; max-width: 62%;
+  max-height: 80%; max-width: 80%;
   box-shadow: 3px 4px 6px rgba(0,0,0,.35);
 }
 
-p{
-    color: rgb(0, 0, 0);
-}
-
-h1{
-    font-family: arial, Helvetica, sans-serif;
-}
-
-span{
-    color: rgb(167, 213, 185);
-}
-
-p span{
-    color: rgb(64, 148, 45);
+small {
+  position: absolute; left: 8px; bottom: 6px;
+  font: 11px Arial, sans-serif;
 }
 
 
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, (300px, 1fr));
-    gap: 24px;
+.projet.vedette {
+  background: var(--accent);
+  align-items: stretch; justify-content: space-between;
+  padding: 8px;
 }
+.vedette h2 {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-weight: normal; font-size: 30px; line-height: 1; text-transform: uppercase;
+}
+.vedette p { font: 15px/1.25 Arial, sans-serif; margin-top: 8px; }
+.vedette .bas { display: flex; justify-content: space-between; align-items: end; font-size: 22px; }
+.vedette .bas b { font-family: Impact, sans-serif; font-size: 34px; font-weight: normal; }
+
+@media (max-width: 900px) { main { grid-template-columns: repeat(2, 1fr); } header { gap: 14px; font-size: 16px; flex-wrap: wrap; } }
+@media (max-width: 500px) { main { grid-template-columns: 1fr; } }
