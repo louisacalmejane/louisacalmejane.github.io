@@ -1,8 +1,8 @@
 root {
-  --accent: #dfff3a;   /* jaune fluo */
+  --accent: #40FF00;   
   --fond: #f2f2f2;
   --case: #e2e2e2;
-  --texte: #000;
+  --texte: #40FF00;
 }
 { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -24,12 +24,29 @@ header a { color: inherit; text-decoration: none; }
 header a:hover { text-decoration: underline; }
 header .droite { margin-left: auto; font-family: Impact, sans-serif; }
 
-
-img{
-    width: 100%;
-    height: auto;
-    display: block;
+.filtres {
+  display: flex; border-bottom: 1px solid #999; background: #fff;
+  font: 14px Arial, sans-serif;
 }
+.filtres label { flex: 1; padding: 6px 12px; border-right: 1px solid #999; }
+.filtres select { border: 0; background: none; font: inherit; width: 70%; }
+
+main {
+  display: grid; gap: 10px; padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+main a {
+  background: var(--case);
+  aspect-ratio: 1 / 0.82;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  position: relative; cursor: pointer; text-decoration: none; color: inherit;
+}
+img {
+  max-height: 72%; max-width: 62%;
+  box-shadow: 3px 4px 6px rgba(0,0,0,.35);
+}
+
 p{
     color: rgb(0, 0, 0);
 }
