@@ -170,3 +170,57 @@ main { grid-template-columns: repeat(2, 1fr); }
 .projet-page { grid-template-columns: 1fr; height: auto; }
 .projet-page figure { height: 60vh; }
 }
+
+body.a-propos {
+  margin: 0;
+  min-height: 100vh;
+  background: #00b140;
+;       
+}
+
+.a-propos__grille {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;   
+  align-items: center;              
+  min-height: 100vh;
+  padding: 0 5vw;
+  gap: 4vw;
+}
+
+.a-propos__texte {
+  color: #000000;
+}
+
+.a-propos__photo {
+  margin: 0;
+  transform: translateY(2vh);
+}
+
+.a-propos__photo img {
+  display: block;
+  width: 500%;
+}
+
+.retour {
+  position: fixed;          
+  top: 2rem;
+  left: 5vw;
+  z-index: 10;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.retour:hover {
+  transform: translateX(-6px);   
+}
+
+/* Mobile : on empile */
+@media (max-width: 768px) {
+  .a-propos__grille {
+    grid-template-columns: 1fr;
+    padding: 8vw 6vw;
+  }
+}
