@@ -1,78 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="manifest" href="favicon/site.webmanifest">
 </head>
 
 <body>
-    <header>
-        <span class="logo"></span>
-        <strong>LOUISA CALMEJANE</strong>
-        <a href="#">À propos</a>
-    </header>
+<header>
+<span class="logo"></span>
+<strong>LOUISA CALMEJANE</strong>
+<a href="#">À propos</a>
+</header>
+<div class="filtres">
+<label>Vue : <select><option>Grille</option></select></label>
+<label>Tri : <select id="tri"><option>Récent</option></select></label>
+<label>Catégorie : <select id="categorie"><option value="tout">Toutes</option></select></label>
+</div>
 
-    <div class="filtres">
-        <label>Vue : <select>
-                <option>Grille</option>
-            </select></label>
-        <label>Tri : <select id="tri">
-                <option>Récent</option>
-            </select></label>
-        <label>Catégorie : <select id="categorie">
-                <option value="tout">Toutes</option>
-            </select></label>
-    </div>
-
-    <div class="grid-container">
-        <main id="grille"></main>
-
-        <a class="item-grid" href="amisum.html">
-            <img src="image/image/amisum/IMG_8003.jpg" alt="peinture">
-            <h2>Amisum</h2>
-        </a>
-
-        <a class="item-grid" href="sauce.html">
-            <img src="image/image/sauce/Asset 2.png" alt="peinture">
-            <h2>Sauce</h2>
-        </a>
-
-        <a class="item-grid" href="gangster.html">
-            <img src="image/image/gangster/Book_Mockup_gang.png" alt="peinture">
-            <h2>Gangster</h2>
-        </a>
-
-        <a class="item-grid" href="cinéma.html">
-            <img src="image/image/affiches/minia.jpg" alt="peinture">
-            <h2>Cinéma</h2>
-        </a>
-
-        <a class="item-grid" href="bananes.html">
-            <img src="image/image/prepa3/bananaa.jpg" alt="peinture">
-            <h2>Bananes</h2>
-        </a>
-
-        <a class="item-grid" href="Peinture.html">
-            <img src="image/image/prepa3/plomberieé copie.jpeg" alt="peinture">
-            <h2>Peinture</h2>
-        </a>
-
-        <a class="item-grid" href="allumettes.html">
-            <img src="image/image/prepa3/allumette3.jpeg" alt="peinture">
-            <h2>Brulée par le travail</h2>
-        </a>
-        </main>
-
-
-
+<main id="grille">
+    <a class="item-grid" href="amisum.html">
+    <img src="image/image/amisum/IMG_8003.jpg" alt="Amisum">
+    <h2>Amisum</h2>
+    </a>
+    <a class="item-grid" href="sauce.html">
+    <img src="image/image/sauce/Asset 2.png" alt="Sauce">
+    <h2>Sauce</h2>
+    </a>
+    <a class="item-grid" href="gangster.html">
+    <img src="image/image/gangster/Book_Mockup_gang.png" alt="Gangster">
+    <h2>Gangster</h2>
+    </a>
+    <a class="item-grid" href="cinéma.html">
+    <img src="image/image/affiches/minia.jpg" alt="Cinéma">
+    <h2>Cinéma</h2>
+    </a>
+    <a class="item-grid" href="bananes.html">
+    <img src="image/image/prepa3/bananaa.jpg" alt="Bananes">
+    <h2>Bananes</h2>
+    </a>
+    <a class="item-grid" href="plomberie.html">
+    <img src="image/image/prepa3/plomberieé copie.jpeg" alt="Peinture">
+    <h2>Peinture</h2>
+    </a>
+    <a class="item-grid" href="allumettes.html">
+    <img src="image/image/prepa3/allumette3.jpeg" alt="Brulée par le travail">
+    <h2>Brulée par le travail</h2>
+    </a>
+</main>
 </body>
-
 </html>
