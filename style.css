@@ -199,9 +199,11 @@ body.a-propos {
 }
 
 .a-propos__photo img {
-width: 500%;
-height: 100%;
-object-fit: cover
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
 }
 
 .retour {
