@@ -229,3 +229,40 @@ body.a-propos {
     padding: 8vw 6vw;
   }
 }
+
+.bandeau {
+  width: 85%;
+  margin-left: auto;         
+  background: #00b140;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 6px 0;
+  border-radius: 20px 0 0 20px; 
+  
+}
+
+
+.bandeau-piste {
+  display: inline-flex;
+  width: max-content;
+  animation: defile 25s linear infinite;
+}
+
+.bandeau-piste span {
+  padding-right: 4rem;     
+}
+
+@keyframes defile {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } 
+}
+
+/* pause au survol (optionnel) */
+.bandeau:hover .bandeau-piste {
+  animation-play-state: paused;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .bandeau-piste { animation: none; }
+}
