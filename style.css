@@ -69,6 +69,8 @@ font: inherit;
 width: 70%;
 }
 
+
+
 main {
 display: grid;
 gap: 10px;
@@ -168,7 +170,7 @@ text-decoration: underline;
 @media (max-width: 900px) {
 main { grid-template-columns: repeat(2, 1fr); }
 .projet-page { grid-template-columns: 1fr; height: auto; }
-.projet-page figure { height: 60vh; }
+/*.projet-page figure { height: 60vh; }*/
 }
 
 body.a-propos {
@@ -197,8 +199,9 @@ body.a-propos {
 }
 
 .a-propos__photo img {
-  display: block;
-  width: 250%;
+width: 500%;
+height: 100%;
+object-fit: cover
 }
 
 .retour {
@@ -217,7 +220,7 @@ body.a-propos {
   transform: translateX(-6px);   
 }
 
-/* Mobile : on empile */
+
 @media (max-width: 768px) {
   .a-propos__grille {
     grid-template-columns: 1fr;
